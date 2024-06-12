@@ -76,7 +76,7 @@
                     </div>
                 </ul>
             </li>
-            <li><a href="">Калькулятор</a></li>
+            <li><a href="calculator.php">Калькулятор</a></li>
             <li><a href="coop.php">Партнёрам</a></li>
             <li>
                 <span class="headerInnerMenuTxt">О компании</span>

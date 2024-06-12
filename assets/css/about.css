@@ -16,7 +16,9 @@
     padding: 40px;
 }
 .bannerText h1{
-    font-size: 4vw;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 63px;
 }
 .mainText{
     display: flex;
