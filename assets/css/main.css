@@ -1,0 +1,275 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width: 65vw;
+    margin: auto;
+
+}
+
+
+.button {
+
+    padding: 1.1vw 1vw;
+    border: none;
+    font-weight: 700;
+    font-size: 0.8vw;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: #D10016;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+
+}
+
+/* HEADER */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8407738095238095) 0%, rgba(0, 0, 0, 0.577468487394958) 34%, rgba(0, 0, 0, 0.2637429971988795) 75%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.headerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 70vw;
+    transition: all 0.3s;
+}
+
+.logo {
+    position: relative;
+    transition: 0.3s;
+    width: 6vw;
+    padding: 1vw;
+}
+
+.min-header {
+    transition: all .3s;
+    background: rgba(0, 0, 0, .8);
+    padding: 0;
+    position: fixed;
+    z-index: 6;
+}
+
+.min-header .logo {
+    width: 5vw;
+}
+
+#account {
+    width: 2vw;
+}
+
+/* UL DESIGN */
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 1.2vw;
+
+    color: white;
+}
+
+header ul li {
+    position: relative;
+    display: flex;
+}
+
+/* UL LI A DESIGN */
+header ul li a {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease-out;
+}
+
+header ul li a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    background-color: #D10016;
+    transition: width 0.3s ease-out;
+
+}
+
+header ul li a:hover:before {
+    width: 100%;
+}
+
+header ul li a:hover {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+
+
+/*INNER-MENU*/
+
+/* ABOUT */
+.headerInnerMenuTxt {
+    padding: 10px;
+}
+.innerMenuAbout {
+    width: 100%;
+    left: 0;
+}
+.innerMenuAbout, .innerMenuCatalog, .catalogMenu{
+    margin: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    
+    
+    justify-content: center;
+
+    list-style-type: none;
+    background: rgba(0, 0, 0, .78);
+    transition: all 0.3s ease-out;
+    transform: translateY(-10px);
+    opacity: 0;
+    font-size: 0.9vw !important;
+}
+
+.innerMenuAbout, .innerMenuCatalog li {
+    padding-top: 0;
+}
+
+.innerMenuAbout .innerMenuText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+}
+
+.mainUl li:hover .innerMenuAbout, 
+.mainUl li:hover .innerMenuCatalog, 
+.innerMenuCatalog li:hover .catalogMenu  {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.innerMenuText li a:hover {
+    background-color: #D10016;
+}
+.innerMenuText li a:hover:before {
+    width: 0;
+}
+/* CATALOG */
+.innerMenuCatalog{
+    
+    left: -50%;
+}
+.innerMenuCatalog, 
+.innerMenuCatalog .innerMenuText, 
+.catalogMenu .innerMenuText, 
+.catalogMenu{
+    width: auto !important;
+    white-space: nowrap;
+}
+.innerMenuCatalog .innerMenuText a, 
+.catalogMenu .innerMenuText a{
+    text-align: left;
+}
+.innerMenuCatalog .innerMenuText, 
+.catalogMenu .innerMenuText{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+
+}
+
+/* CATALOG INNER MENU */
+.catalogMenu{
+    top: 0;
+    left: 100%;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding: 20px 0 0 0;
+}
+
+.footerBlocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1vw;
+}
+
+.footerLogo {
+    width: 10vw;
+
+}
+
+.footerBlocks a {
+    font-size: 1vw;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 0.6vw;
+    align-items: center;
+}
+
+.footerIcons {
+    width: 1.1vw;
+}
+
+.footerContacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.priacyPolicy {
+    background: #141414;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-size: 1vw;
+    padding: 1vw;
+}
+
+.footer__politic {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+
+.red {
+    color: #D10016;
+}

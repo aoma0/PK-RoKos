@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  /* change to relative positioning */
+  background: url("../../images/bg-header.jpg") no-repeat center top ; 
+  background-size: cover;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+h1 {
+  font-size: 2.2vw;
+  color: #D10016;
+}
+
+.formsBlock {
+  background: white;
+  padding: 2vw;
+}
+
+/*FORMS*/
+#regForm {
+  display: none;
+  padding: 1vw;
+}
+
+#logForm {
+  display: none;
+  padding: 1vw;
+}
+
+.formaBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  gap: 1vw;
+}
+
+.errorMsg {
+  font-size: 1.5vw;
+  min-height: 1.5vw;
+}
+
+.formsBlock p {
+  font-size: 0.9vw;
+  display: flex;
+  justify-content: center;
+}
+
+/* STYLE FOR FORM ELEMENT*/
+.formaBlock input {
+  color: #313131;
+  font-size: 1.2vw;
+  width: 13vw;
+}
+
+.formaBlock input,
+.formaBlock input:active,
+.formaBlock input:focus,
+.formaBlock input:hover {
+  border: none;
+  border-bottom: solid 0.1vw #D10016;
+  outline: none
+}
+input::-webkit-input-placeholder {
+  font-size: 1vw;
+  
+}
+
+input::-moz-placeholder {
+  font-size: 1vw;
+}
+
+input:-ms-input-placeholder {
+  font-size: 1vw;
+}
+
+/* BOTTOM OF THE FORMS*/
+#regP {
+  display: flex;
+}
+
+#logP {
+  display: none;
+}
+
+.formsBlock span {
+  cursor: pointer;
+
+}
+
+.formsBlock span:hover {
+  text-decoration: underline;
+}

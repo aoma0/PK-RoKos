@@ -1,0 +1,103 @@
+.banner{
+    height: 550px;
+    background: url("../../images/wokWithUsbg.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.bannerText{
+    display: block;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: -30px;
+    z-index: 2;
+    width: 740px;
+    padding: 40px;
+}
+.bannerText h1{
+    font-size: 4vw;
+}
+h2{
+    font-size: 40pt;
+    font-weight: 500;
+    color: #D10016;
+}
+.textBlock{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 15px;
+}
+.textBlock p{
+    font-size: 22px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.list{
+    
+}
+.textBlock strong{
+    font-weight: bold;
+}
+.videoBlock{
+    display: block;
+    padding-bottom: 50px;
+}
+/* PROJECTS */
+.projectsWrap {
+    width: auto;
+    height: auto;
+}
+
+.projectsWrap h3 {
+    font-size: 2.2vw;
+    text-align: center;
+    padding-bottom: 1.3vw;
+}
+
+.projectsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+.projectsRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.projectItem img {
+    width: 20vw;
+}
+
+.projectItem {
+    display: flex;
+    position: relative;
+}
+
+.itemImg {
+    display: flex;
+    position: relative;
+}
+
+.itemDescr {
+    position: absolute;
+    top: 1vw;
+    left: 0;
+    z-index: 3;
+    font-size: 1.3vw;
+    color: white;
+    background: rgba(0, 0, 0, 0.575);
+}
+
+.itemDescr span {
+    display: block;
+    position: relative;
+    padding: 0.8vw 1vw;
+
+    text-decoration: none;
+}

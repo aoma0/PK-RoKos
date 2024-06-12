@@ -1,0 +1,414 @@
+/* BANNER */
+
+.banner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* CATALOG BLOCK */
+.text-center{
+    font-size: 2.2vw;
+    text-align: center;
+    padding-bottom: 1.3vw;
+}
+.catalogWrap{
+    padding: 3vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.catalogContainer {
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left {
+    width: 65%;
+}
+
+.right {
+    width: 35%;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* добавляем gap */
+}
+
+.block {
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
+.sub-blocks {
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    gap: 20px;
+}
+
+.sub-blocks .block {
+    width: 50%;
+}
+.right .block:nth-child(1) {
+    max-height: 65%;
+    flex: 1;
+  }
+  
+  .right .block:nth-child(2) {
+    max-height: 35%;
+    flex: 1;
+  }
+
+/* FORM OF CALL BACK*/
+#formred {
+    background: #D10016;
+    color: white;
+}
+
+#formred input {
+    color: white;
+    background: #D10016;
+    font-size: 1.5vw;
+    width: 13vw;
+}
+
+#formred input,
+#formred input:active,
+#formred input:focus,
+#formred input:hover {
+    border: none;
+    border-bottom: solid 0.1vw white;
+    outline: none
+}
+
+#formred .button {
+    border: solid 0.1vw white
+}
+
+#formred a {
+    color: white;
+    text-decoration: underline
+}
+
+#formred a:hover {
+    text-decoration: none
+}
+
+.formcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5vw 0;
+}
+
+.formcenter h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.4vw;
+}
+
+.formWrapper {
+    padding: 3vw 0 1vw 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5vw;
+    justify-content: center;
+}
+
+.reddiv {
+    font-size: 1vw;
+
+}
+
+
+.smalltext {
+    text-align: center;
+    font-size: 0.8vw;
+
+}
+
+/* DESCIPTION */
+.description{
+    background: white;
+}
+
+.textAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.textAbout h2 {
+    color: rgb(209, 0, 21);
+    font-size: 2.4vw;
+
+}
+
+.textAbout p {
+    font-size: 0.9vw;
+    line-height: 1.2vw;
+    text-align: justify;
+}
+
+.descriptionWrap {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 3vw 0;
+
+}
+
+.imgAbout {
+    margin: auto 0;
+    height: 100%;
+    width: 30vw;
+}
+
+/* ADVANTAGES*/
+
+.advantages {
+    background: white;
+    border-top: solid rgb(194, 194, 194) 0.1vw;
+    border-bottom: solid rgb(194, 194, 194) 0.1vw;
+
+}
+
+.advantages_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 0;
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.advantages__ico {
+    width: 3.5vw;
+}
+
+.advantages__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.advantages__subtitle {
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+
+.advantages__text {
+    font-size: 1vw;
+}
+
+/* PROJECTS*/
+.ourProjects {}
+
+.projectsWrap {
+    padding: 3vw 0 0 0;
+}
+
+.ourProjects h2 {
+    font-size: 2.2vw;
+    text-align: center;
+    padding-bottom: 1.3vw;
+}
+
+.projectsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+}
+
+.projectItem img {
+    width: 20vw;
+}
+
+.projectItem {
+    display: flex;
+    position: relative;
+}
+
+.itemImg {
+    display: flex;
+    position: relative;
+}
+
+.itemDescr {
+    position: absolute;
+    top: 1vw;
+    left: 0;
+    z-index: 3;
+    font-size: 1.3vw;
+    color: white;
+    background: rgba(0, 0, 0, 0.575);
+}
+
+.itemDescr span {
+    display: block;
+    position: relative;
+    padding: 0.8vw 1vw;
+
+    text-decoration: none;
+}
+
+.projectBtn {
+    padding-top: 1.7vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* NEWS*/
+
+.recentNews {}
+
+.recentNews h2 {
+    font-size: 2.2vw;
+    text-align: center;
+    padding-bottom: 1.3vw;
+}
+
+/* news cards */
+.newsWrap {
+    padding: 3vw 0 0 0;
+}
+
+.newsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.newsItem {
+    width: 20vw;
+    background: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.newsItem img {
+    width: 100%;
+    display: block
+}
+
+.newsDescr {
+    padding: 1.2vw;
+    margin: 0;
+}
+
+.newsDescr span {
+    color: #313131;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+
+}
+
+.cardTitle {
+
+    font-size: 1vw;
+    font-weight: 700;
+    padding-bottom: 1vw;
+}
+
+.cardText {
+
+    display: block;
+    line-height: 1.2;
+    font-size: 0.9vw;
+}
+
+/* REVIEWS*/
+.reviews {}
+
+.reviewsWrap {
+    padding: 3vw 0;
+}
+
+
+.reviews h2 {
+    font-size: 2.2vw;
+    text-align: center;
+    padding-bottom: 1.3vw;
+}
+
+.reviewCardWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.reviewCard {
+
+    height: 15vw;
+    border: 0.1vw solid #D10016;
+    font-size: 1vw;
+    padding: 0.9vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.reviewCard a {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    text-decoration: none;
+    color: #313131;
+}
+
+.otzyv {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stars span {
+    font-weight: bold;
+
+}
+
+.otzyv p {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+
+}
+
+.otzyvBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
