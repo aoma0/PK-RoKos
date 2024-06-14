@@ -60,7 +60,7 @@ if (isset($_GET['logout']) && $_GET['logout'] == true) {
     </div>
 
     <?php include 'assets\php\footer.php'; ?>
-    <script src=""></script>
+    
 </body>
 
 </html>
