@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <?php include 'header.php'; ?>
+    <?php include 'assets\php\header.php'; ?>
 
     <div class="banner">
         <div class="container">
@@ -97,7 +97,7 @@
             </div>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include 'assets\php\footer.php'; ?>
 
 </body>
 

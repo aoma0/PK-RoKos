@@ -8,20 +8,20 @@
 
 /* CATALOG BLOCK */
 .text-center{
-    font-size: 2.2vw;
+    font-size: 52px;
     text-align: center;
-    padding-bottom: 1.3vw;
+    padding-bottom: 30px;
 }
 .catalogWrap{
-    padding: 3vw 0;
+    padding: 60px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .catalogContainer {
-    width: 80%;
-    height: 70vh;
+    width: 1000px;
+    height: 670px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -80,8 +80,8 @@
 #formred input {
     color: white;
     background: #D10016;
-    font-size: 1.5vw;
-    width: 13vw;
+    font-size: 28px;
+    width: 250px;
 }
 
 #formred input,
@@ -89,12 +89,12 @@
 #formred input:focus,
 #formred input:hover {
     border: none;
-    border-bottom: solid 0.1vw white;
+    border-bottom: solid 1px white;
     outline: none
 }
 
 #formred .button {
-    border: solid 0.1vw white
+    border: solid 1px white
 }
 
 #formred a {
@@ -110,32 +110,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2.5vw 0;
+    padding: 50px 0;
 }
 
 .formcenter h2 {
     text-align: center;
     font-weight: bold;
-    font-size: 2.4vw;
+    font-size: 46px;
 }
 
 .formWrapper {
-    padding: 3vw 0 1vw 0;
+    padding: 60px 0 20px 0;
     display: flex;
     flex-direction: row;
-    gap: 2.5vw;
+    gap: 50px;
     justify-content: center;
 }
 
 .reddiv {
-    font-size: 1vw;
+    font-size: 19px;
 
 }
 
 
 .smalltext {
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 15px;
 
 }
 
@@ -153,13 +153,13 @@
 
 .textAbout h2 {
     color: rgb(209, 0, 21);
-    font-size: 2.4vw;
+    font-size: 46px;
 
 }
 
 .textAbout p {
-    font-size: 0.9vw;
-    line-height: 1.2vw;
+    font-size: 17px;
+    line-height: 23px;
     text-align: justify;
 }
 
@@ -168,14 +168,14 @@
     flex-direction: row;
     gap: 20px;
     justify-content: space-between;
-    padding: 3vw 0;
+    padding: 50px 0;
 
 }
 
 .imgAbout {
     margin: auto 0;
     height: 100%;
-    width: 30vw;
+    width: 577px;
 }
 
 /* ADVANTAGES*/
@@ -192,45 +192,45 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 3vw 0;
+    padding: 50px 0;
 }
 
 .advantages__item {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 20px;
 }
 
 .advantages__ico {
-    width: 3.5vw;
+    width: 67px;
 }
 
 .advantages__content {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 20px;
 }
 
 .advantages__subtitle {
-    font-size: 1.1vw;
+    font-size: 21px;
     font-weight: 700;
 }
 
 .advantages__text {
-    font-size: 1vw;
+    font-size: 19px;
 }
 
 /* PROJECTS*/
 .ourProjects {}
 
 .projectsWrap {
-    padding: 3vw 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 .ourProjects h2 {
-    font-size: 2.2vw;
+    font-size: 46px;
     text-align: center;
-    padding-bottom: 1.3vw;
+    padding-bottom: 25px;
 }
 
 .projectsWrapper {
@@ -241,7 +241,7 @@
 }
 
 .projectItem img {
-    width: 20vw;
+    width:385px;
 }
 
 .projectItem {
@@ -256,10 +256,10 @@
 
 .itemDescr {
     position: absolute;
-    top: 1vw;
+    top: 19px;
     left: 0;
     z-index: 3;
-    font-size: 1.3vw;
+    font-size: 25px;
     color: white;
     background: rgba(0, 0, 0, 0.575);
 }
@@ -267,13 +267,13 @@
 .itemDescr span {
     display: block;
     position: relative;
-    padding: 0.8vw 1vw;
+    padding: 15px 19px;
 
     text-decoration: none;
 }
 
 .projectBtn {
-    padding-top: 1.7vw;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
 
@@ -284,14 +284,14 @@
 .recentNews {}
 
 .recentNews h2 {
-    font-size: 2.2vw;
+    font-size: 46px;
     text-align: center;
-    padding-bottom: 1.3vw;
+    padding-bottom: 25px;
 }
 
 /* news cards */
 .newsWrap {
-    padding: 3vw 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 .newsWrapper {
@@ -302,7 +302,7 @@
 }
 
 .newsItem {
-    width: 20vw;
+    width:385px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -315,7 +315,7 @@
 }
 
 .newsDescr {
-    padding: 1.2vw;
+    padding: 23px;
     margin: 0;
 }
 
@@ -330,45 +330,45 @@
 
 .cardTitle {
 
-    font-size: 1vw;
+    font-size: 19px;
     font-weight: 700;
-    padding-bottom: 1vw;
+    padding-bottom: 19px;
 }
 
 .cardText {
 
     display: block;
-    line-height: 1.2;
-    font-size: 0.9vw;
+    line-height: 23px;
+    font-size: 17px;
 }
 
 /* REVIEWS*/
 .reviews {}
 
 .reviewsWrap {
-    padding: 3vw 0;
+    padding: 50px 0;
 }
 
 
 .reviews h2 {
-    font-size: 2.2vw;
+    font-size: 46px;
     text-align: center;
-    padding-bottom: 1.3vw;
+    padding-bottom: 25px;
 }
 
 .reviewCardWrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2vw;
+    gap: 38px;
 }
 
 .reviewCard {
 
-    height: 15vw;
-    border: 0.1vw solid #D10016;
-    font-size: 1vw;
-    padding: 0.9vw;
+    height: 290px;
+    border: 1px solid #D10016;
+    font-size: 19px;
+    padding: 17px;
     display: flex;
     flex-direction: column;
 
@@ -377,7 +377,7 @@
 .reviewCard a {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 17px;
     text-decoration: none;
     color: #313131;
 }

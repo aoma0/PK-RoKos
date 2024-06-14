@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    width: 65vw;
+    width: 1250px;
     margin: auto;
 
 }
@@ -17,10 +17,10 @@ body {
 
 .button {
 
-    padding: 1.1vw 1vw;
+    padding: 21px 19px;
     border: none;
     font-weight: 700;
-    font-size: 0.8vw;
+    font-size: 15px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     text-align: center;
@@ -52,15 +52,15 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    max-width: 70vw;
+    max-width: 1350px;
     transition: all 0.3s;
 }
 
 .logo {
     position: relative;
     transition: 0.3s;
-    width: 6vw;
-    padding: 1vw;
+    width: 115px;
+    padding: 19px;
 }
 
 .min-header {
@@ -72,11 +72,11 @@ header {
 }
 
 .min-header .logo {
-    width: 5vw;
+    width: 100px;
 }
 
 #account {
-    width: 2vw;
+    width: 38px;
 }
 
 /* UL DESIGN */
@@ -88,7 +88,7 @@ header ul {
     align-items: center;
 
     font-weight: 700;
-    font-size: 1.2vw;
+    font-size: 23px;
 
     color: white;
 }
@@ -137,17 +137,21 @@ header ul li a:hover {
 .headerInnerMenuTxt {
     padding: 10px;
 }
+
 .innerMenuAbout {
     width: 100%;
     left: 0;
 }
-.innerMenuAbout, .innerMenuCatalog, .catalogMenu{
+
+.innerMenuAbout,
+.innerMenuCatalog,
+.catalogMenu {
     margin: 0;
     visibility: hidden;
     position: absolute;
     top: 100%;
-    
-    
+
+
     justify-content: center;
 
     list-style-type: none;
@@ -155,10 +159,11 @@ header ul li a:hover {
     transition: all 0.3s ease-out;
     transform: translateY(-10px);
     opacity: 0;
-    font-size: 0.9vw !important;
+    font-size: 17px !important;
 }
 
-.innerMenuAbout, .innerMenuCatalog li {
+.innerMenuAbout,
+.innerMenuCatalog li {
     padding-top: 0;
 }
 
@@ -170,9 +175,9 @@ header ul li a:hover {
 
 }
 
-.mainUl li:hover .innerMenuAbout, 
-.mainUl li:hover .innerMenuCatalog, 
-.innerMenuCatalog li:hover .catalogMenu  {
+.mainUl li:hover .innerMenuAbout,
+.mainUl li:hover .innerMenuCatalog,
+.innerMenuCatalog li:hover .catalogMenu {
     visibility: visible;
     transform: translateY(0);
     opacity: 1;
@@ -181,27 +186,32 @@ header ul li a:hover {
 .innerMenuText li a:hover {
     background-color: #D10016;
 }
+
 .innerMenuText li a:hover:before {
     width: 0;
 }
+
 /* CATALOG */
-.innerMenuCatalog{
-    
+.innerMenuCatalog {
+
     left: -50%;
 }
-.innerMenuCatalog, 
-.innerMenuCatalog .innerMenuText, 
-.catalogMenu .innerMenuText, 
-.catalogMenu{
+
+.innerMenuCatalog,
+.innerMenuCatalog .innerMenuText,
+.catalogMenu .innerMenuText,
+.catalogMenu {
     width: auto !important;
     white-space: nowrap;
 }
-.innerMenuCatalog .innerMenuText a, 
-.catalogMenu .innerMenuText a{
+
+.innerMenuCatalog .innerMenuText a,
+.catalogMenu .innerMenuText a {
     text-align: left;
 }
-.innerMenuCatalog .innerMenuText, 
-.catalogMenu .innerMenuText{
+
+.innerMenuCatalog .innerMenuText,
+.catalogMenu .innerMenuText {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -210,7 +220,7 @@ header ul li a:hover {
 }
 
 /* CATALOG INNER MENU */
-.catalogMenu{
+.catalogMenu {
     top: 0;
     left: 100%;
 }
@@ -226,32 +236,32 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1vw;
+    padding-bottom: 19px;
 }
 
 .footerLogo {
-    width: 10vw;
+    width: 190px;
 
 }
 
 .footerBlocks a {
-    font-size: 1vw;
+    font-size: 19px;
     text-decoration: none;
     color: white;
     display: flex;
     flex-direction: row;
-    gap: 0.6vw;
+    gap: 12px;
     align-items: center;
 }
 
 .footerIcons {
-    width: 1.1vw;
+    width: 21px;
 }
 
 .footerContacts {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 19px;
 }
 
 .priacyPolicy {
@@ -260,14 +270,14 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     color: white;
-    font-size: 1vw;
-    padding: 1vw;
+    font-size: 19px;
+    padding: 19px;
 }
 
 .footer__politic {
     text-decoration: none;
     color: white;
-    font-size: 1vw;
+    font-size: 19px;
 }
 
 .red {

@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    /* change to relative positioning */
+    background: url("../../images/bg-header.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 40pt;
+    color: #D10016;
+    margin-bottom: 20px;
+}
+
+.profileBlock {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+/* LEFT BLOCK */
+.leftBlock {
+    height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.leftBlockText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.leftBlock p {
+    font-size: 25pt;
+}
+
+.leftBlock a,
+.leftBlock a:visited,
+.leftBlock a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.leftBlock p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.leftTopBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+
+}
+
+.leftBlockDevider {
+    width: 5px;
+    height: 100%;
+    background-color: #141414;
+    margin: 0 5px;
+}
+
+/* RIGHT BLOCK  */
+.rightBlock {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
+}
+.rightBlock p{
+    font-size: 20px;
+}

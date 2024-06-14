@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <?php include 'header.php'; ?>
+    <?php include 'assets\php\header.php'; ?>
 
     <div class="banner">
         <div class="container">
@@ -58,15 +58,15 @@
             </div>
 
             <div class="block">
-                <form action="" id="obratnaj" method="post">
+                <form action="assets/php/contact_table.php" id="obratnaj" method="post">
                     <div class="zag">Остались вопросы?<br>Заполните форму, и мы с Вами свяжемся!</div>
                     <div class="formRow">
-                        <input type="text" name="" placeholder="Ваше имя">
-                        <input type="text" name="" placeholder="Название организации">
+                        <input type="text" name="name" placeholder="Ваше имя">
+
                     </div>
                     <div class="formRow">
-                        <input type="text" name="" placeholder="Ваш e-mail">
-                        <input type="text" name="" placeholder="Ваш телефон" required>
+                        <input type="text" name="email" placeholder="Ваш e-mail" required>
+                        <input type="text" name="phone" placeholder="Ваш телефон" required>
                     </div>
                     <div class="formRow">
                         <textarea name="text" rows="4" placeholder="Текст сообщения" ></textarea>
@@ -82,7 +82,7 @@
             </div>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include 'assets\php\footer.php'; ?>
 
 </body>
 

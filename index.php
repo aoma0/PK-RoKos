@@ -16,7 +16,7 @@ session_start();
 </head>
 
 <body style="background-image: url(images/bg.jpg) ; background-attachment: fixed; ">
-    <?php include 'header.php'; ?>
+    <?php include 'assets\php\header.php'; ?>
     <div class="banner"><img src="images/banner.jpg" alt="">
 
     </div>
@@ -40,7 +40,7 @@ session_start();
             </div>
         </div>
     </div>
-    <form id="formred" action="/submit/order" method="POST">
+    <form id="formred" action="assets/php/freeCallBack.php" method="POST">
         <div class="container">
             <div class="formcenter">
                 <h2>Заказать бесплатный замер</h2>
@@ -227,7 +227,7 @@ session_start();
         </div>
     </div>
 
-    <?php include 'footer.php'; ?>
+    <?php include 'assets\php\footer.php'; ?>
 
     <script src="assets\js\code.js"></script>
 </body>

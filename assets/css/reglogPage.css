@@ -7,7 +7,7 @@ body {
 header {
   position: relative;
   /* change to relative positioning */
-  background: url("../../images/bg-header.jpg") no-repeat center top ; 
+  background: url("../../images/bg-header.jpg") no-repeat center top;
   background-size: cover;
 }
 
@@ -75,9 +75,10 @@ h1 {
   border-bottom: solid 0.1vw #D10016;
   outline: none
 }
+
 input::-webkit-input-placeholder {
   font-size: 1vw;
-  
+
 }
 
 input::-moz-placeholder {

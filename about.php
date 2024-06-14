@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <?php include 'header.php'; ?>
+    <?php include 'assets\php\header.php'; ?>
 
     <div class="banner">
         <div class="container">
@@ -42,7 +42,7 @@
         <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Q0xeSnAbZFQ" style="width: 100%; height: 600px; display: flex;"></iframe>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include 'assets\php\footer.php'; ?>
 
 </body>
 

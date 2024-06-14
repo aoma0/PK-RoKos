@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('db.php');
+require_once('assets\php\db.php');
 
 
 if (isset($_SESSION['user_id'])) { //проверка не авторизовался ли пользователь уже
@@ -27,11 +27,12 @@ if (isset($_POST['reg'])) {
         exit();
     } else {
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $email = $_POST['email'];
         $name = $_POST['name'];
+        $phone = $_POST['phone'];
 
-
-        $stmt = $conn->prepare("INSERT INTO `users` (`login`, `password`, `name`) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $login, $password, $name);
+        $stmt = $conn->prepare("INSERT INTO `users` (`login`, `password`, `name`, `email`, `phone`) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssss", $login, $password, $name, $email, $phone);
         $stmt->execute();
 
         $user_id = $conn->insert_id; // Get the newly inserted user's ID
@@ -46,7 +47,7 @@ if (isset($_POST['reg'])) {
 if (isset($_POST['loginBtn'])) {
     $login = $_POST['login'];
 
-    $stmt = $conn->prepare("SELECT * FROM `users` WHERE `login` = ?");
+    $stmt = $conn->prepare("SELECT * FROM `users` WHERE BINARY `login` = ?");
     $stmt->bind_param("s", $login);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -64,13 +65,13 @@ if (isset($_POST['loginBtn'])) {
         } else {
             // Если пароль неверен, выдаём ошибку
             $_SESSION['login_message'] = 'Неверный пароль!';
-            header("Location: ". $_SERVER['PHP_SELF']. "?login=1");
+            header("Location: " . $_SERVER['PHP_SELF'] . "?login=1");
             exit();
         }
     } else {
         // Если пользователя с таким логином нет, то выдаём ошибку
         $_SESSION['login_message'] = 'Пользователь с таким логином не найден!';
-        header("Location: ". $_SERVER['PHP_SELF']. "?login=1");
+        header("Location: " . $_SERVER['PHP_SELF'] . "?login=1");
         exit();
     }
 }
@@ -92,7 +93,7 @@ if (isset($_POST['loginBtn'])) {
 
 <body style="background-image: url(images/bg.jpg) ; background-attachment: fixed; ">
 
-    <?php include 'header.php'; ?>
+    <?php include 'assets\php\header.php'; ?>
 
     <div class="wrapper">
         <div class="formsBlock">
@@ -103,6 +104,8 @@ if (isset($_POST['loginBtn'])) {
                     <input type="text" name="login" placeholder="логин" required>
                     <input type="password" name="password" placeholder="пароль" required>
                     <input type="password" name="repeatpassword" placeholder="повторите пароль" required>
+                    <input type="text" name="email" placeholder="e-mail" required>
+                    <input type="text" name="phone" placeholder="номер телефона" required>
                     <p class="errorMsg"><?php echo isset($_SESSION['registration_message']) ? $_SESSION['registration_message'] : ''; ?></p>
                     <?php unset($_SESSION['registration_message']); // Очистим сообщение после вывода 
                     ?>
@@ -121,14 +124,16 @@ if (isset($_POST['loginBtn'])) {
 
                 </form>
             </div>
-            <div class="formsBottom"></div>
+            <div class="formsBottom">
                 <p id="regP">Уже есть аккаунт? <span onclick="toggleView()" class="red">Войти</span></p>
                 <p id="logP">Еще нет аккаунта? <span onclick="toggleView()" class="red">Регистрация</span></p>
             </div>
-        </div>    
+            
+        </div>
+    </div>
     </div>
 
-    <?php include 'footer.php'; ?>
+    <?php include 'assets\php\footer.php'; ?>
     <script src="assets\js\loginPage.js"></script>
 </body>
 
