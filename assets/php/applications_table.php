@@ -1,5 +1,5 @@
 <?php
-// Получение ID пользователя из сессии
+
 $user_id = $_SESSION['user_id'];
 
 // Получение статуса администратора из таблицы users
@@ -35,7 +35,9 @@ if (mysqli_num_rows($result) == 0) {
         echo "<td>". $row["applName"]. "</td>";
         echo "<td class=\"textRow\">". $row["text"]. "</td>";
         echo "<td>". $row["status"]. "</td>";
-        echo "<td class=\"buttonRow\"> <button class=\"btnTable\" onclick=\"saveApplIdToSession('" . $row["id"] . "')\">Открыть</button> </td>";
+        echo "<td class=\"buttonRow\"> 
+        <button class=\"btnTable\" onclick = \"openModal(" . $row["id"] . ")\">Открыть</button> 
+        </td>";
         echo "</tr>";
     }
 

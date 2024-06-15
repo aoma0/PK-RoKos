@@ -58,9 +58,14 @@ if (isset($_GET['logout']) && $_GET['logout'] == true) {
         </div>
 
     </div>
-
-    <?php include 'assets\php\footer.php'; ?>
+    <!-- Добавляем HTML-код модального окна -->
+    <div id="applicationModal" class="modal">
+        <div id="modalContent" class="modal-content"> 
+        </div>
+    </div>
     
+    <?php include 'assets\php\footer.php'; ?>
+    <script src="assets/js/openAppl.js"></script>
 </body>
 
 </html>

@@ -134,7 +134,7 @@
     background: rgba(255, 255, 255, 0.7);
     position: absolute;
     bottom: 30px;
-    left: 0;
+    
     padding: 15px 25px;
     font-weight: bold;
     font-size: 20px;
@@ -142,6 +142,113 @@
     color: #D10016;
     border: 1.5px solid #D10016;
 
+}
+@media (min-width:1280px){
+    .priceBlock{
+        left: 0;
+    }
+}
+@media (max-width:1279px){
+    .catalogContainer {
+        width: 90%;
+        height: 600px;
+        
+    }
+    .priceBlock{
+        right: 0;
+        padding: 10px 25px;
+        line-height: 28px;
+    }
+}
+@media (max-width:991px){
+    .catalogContainer {
+        width: 90%;
+        height: 670px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .left{
+        flex: 1;
+        height: 80%;
+    }
+   
+    .right .block{
+        width: 50%;
+        justify-content: space-between;
+    }
+    .sub-blocks{
+       
+        flex: 1;
+    }
+    .sub-blocks, .right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        gap: 20px;
+    }
+    .right{
+        height: 30%;
+    }
+    .right .block:nth-child(1) {
+        max-height: 100%;
+        flex: 1;
+    }
+    
+    .right .block:nth-child(2) {
+        max-height: 100%;
+        flex: 1;
+    }
+}
+@media (max-width:767px){
+    .catalogContainer {
+        width: 90%;
+        height: 670px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left{
+        flex: 1;
+        height: 100%;
+    }
+    .left .block{
+        height: 118px !important;
+    }
+    .right .block{
+        width: 100%;
+        height: 118px;
+    }
+    .sub-blocks .block {
+        width: 100%;
+        height: 118px;
+    }
+    .sub-blocks, .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .right{
+        flex: 1;
+        height: 100%;
+    }
+    .right .block:nth-child(1) {
+        height: 118px;
+        flex: 1;
+    }
+    
+    .right .block:nth-child(2) {
+        height: 118px;
+        flex: 1;
+    }
+    .block{
+        flex: none;
+    }
 }
 
 /* FORM OF CALL BACK*/
