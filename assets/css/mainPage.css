@@ -116,8 +116,9 @@
     max-height: 35%;
     flex: 1;
 }
+
 /* CATALOG CARDS INFO */
-.nameBlock{
+.nameBlock {
     background: rgba(0, 0, 0, .7);
     position: absolute;
     top: 20px;
@@ -128,7 +129,8 @@
     line-height: 32px;
     color: white;
 }
-.priceBlock{
+
+.priceBlock {
     background: rgba(255, 255, 255, 0.7);
     position: absolute;
     bottom: 30px;
@@ -139,7 +141,7 @@
     line-height: 32px;
     color: #D10016;
     border: 1.5px solid #D10016;
-    
+
 }
 
 /* FORM OF CALL BACK*/
@@ -248,21 +250,26 @@
     height: 100%;
     width: 577px;
 }
-@media (max-width: 1260px){
-    .imgAbout{
+
+@media (max-width: 1279px) {
+    .imgAbout {
         width: 350px;
         height: 100%;
     }
 }
-@media (max-width: 991px){
-    .imgAbout{
+
+@media (max-width: 991px) {
+    .imgAbout {
         display: none;
     }
-    .descriptionWrap, .textAbout{
+
+    .descriptionWrap,
+    .textAbout {
         width: 100%;
         padding: 50px 20px;
     }
 }
+
 /* ADVANTAGES*/
 
 .advantages {
@@ -278,9 +285,10 @@
     justify-content: space-between;
     width: 100%;
     padding: 50px 10px;
-  
+
 }
-@media (max-width: 1260px){
+
+@media (max-width: 1260px) {
     .advantages_wrap {
         display: flex;
         flex-direction: row;
@@ -289,9 +297,10 @@
         padding: 50px 100px;
         flex-wrap: wrap;
         gap: 50px;
-      
+
     }
 }
+
 .advantages__item {
     display: flex;
     flex-direction: column;
@@ -318,16 +327,10 @@
 }
 
 /* PROJECTS*/
+.ourProjects {}
+
 .projectsWrap {
     padding: 50px 0 0 0;
-}
-.slick-slide {
-    width: calc((100% - 2 * 20px) / 3); /* ширина каждого элемента */
-    margin: 0 20px; /* отступ между элементами */
-  }
-.container{
-    align-content: center;
-    align-items: center;
 }
 
 .ourProjects h2 {
@@ -335,26 +338,29 @@
     text-align: center;
     padding-bottom: 25px;
 }
-
-.projectsWrapper {
-  align-content: center;
-  align-items: center;
+.slick-initialized .slick-slide {
+    display: flex;
 }
+.projectsWrapper {}
 
 .projectItem img {
     width: 360px;
-    
 }
 
 .projectItem {
     display: flex;
     position: relative;
-    width: 360px;
+    justify-content: center;
 }
 
 .itemImg {
     display: flex;
     width: 360px;
+    height: 240px;
+    background-position: center !important; 
+    background-size: cover !important;
+    object-fit: cover;
+    position: relative;
 }
 
 .itemDescr {
@@ -365,19 +371,19 @@
     font-size: 25px;
     color: white;
     background: rgba(0, 0, 0, 0.575);
-    width: 360px;
     padding: 15px 19px;
-
+    width: 100%;
     text-decoration: none;
+    display: block;
 }
 
-.itemDescr span {
+/* .itemDescr span {
     display: block;
     position: relative;
     padding: 15px 19px;
 
     text-decoration: none;
-}
+} */
 
 .projectBtn {
     padding-top: 30px;

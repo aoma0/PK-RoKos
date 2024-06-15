@@ -11,11 +11,11 @@ session_start();
     <title>Main Page</title>
     <meta name='viewport' content='width=device-width, user initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets\css\normalize.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets\css\main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets\css\mainPage.css'>
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
+    <link rel='stylesheet' type='text/css' media='screen' href='assets\css\main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets\css\mainPage.css'>
 </head>
 
 <body style="background-image: url(images/bg.jpg) ; background-attachment: fixed; ">
@@ -149,53 +149,70 @@ session_start();
             <div class="projectsWrap">
                 <h2>Наши <span class="red">работы</span></h2>
                 <div class="slider projectsWrapper">
-
                     <div class="projectItem">
-                        <div class="itemImg"><img src="images/projects/1.jpg" alt=""></div>
-                        <div class="itemDescr">Детский сад на 220 мест по ул. Ягодная в с. Ямное</div>
+
+                        <div class="itemImg" style="background: url(images/projects/1.jpg) no-repeat">
+                            <div class="itemDescr">Детский сад на 220 мест по ул. Ягодная в с. Ямное</div>
+                        </div>
                     </div>
 
                     <div class="projectItem">
-                        <div class="itemImg"><img src="images/projects/2.jpg" alt=""></div>
-                        <div class="itemDescr"><span>Спортивный комплекс в г.Лиски Воронежской области</span></div>
+
+                        <div class="itemImg" style="background: url(images/projects/2.jpg) no-repeat">
+                            <div class="itemDescr">Спортивный комплекс в г.Лиски Воронежской области</div>
+                        </div>
                     </div>
 
                     <div class="projectItem">
-                        <div class="itemImg"><img src="images/projects/3.jpg" alt=""></div>
-                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
-                    </div>
-                    
-                    <div class="projectItem">
-                        <div class="itemImg"><img src="images/projects/4.jpg" alt=""></div>
-                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+
+                        <div class="itemImg" style="background: url(images/projects/3.jpg) no-repeat">
+                            <div class="itemDescr">Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</div>
+                        </div>
                     </div>
 
                     <div class="projectItem">
-                        <div class="itemImg"><img src="images/projects/5.jpg" alt=""></div>
-                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+
+                        <div class="itemImg" style="background: url(images/projects/4.jpg) no-repeat">
+                            <div class="itemDescr">Детский сад «Развитие» на 300 мест в с.Новая Усмань</div>
+                        </div>
                     </div>
 
                     <div class="projectItem">
-                        <div class="itemImg"><img src="images/projects/6.jpeg" alt=""></div>
-                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+
+                        <div class="itemImg" style="background: url(images/projects/5.jpg) no-repeat">
+                            <div class="itemDescr">Образовательный центр в городе Боброве </div>
+                        </div>
                     </div>
 
                     <div class="projectItem">
-                        <div class="itemImg"><img src="images/projects/7.jpeg" alt=""></div>
-                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+
+                        <div class="itemImg" style="background: url(images/projects/6.jpeg) no-repeat">
+                            <div class="itemDescr">Пристройка к МБОУ СОШ №84</div>
+                        </div>
                     </div>
 
                     <div class="projectItem">
-                        <div class="itemImg"><img src="images/projects/8.jpg" alt=""></div>
-                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+
+                        <div class="itemImg" style="background: url(images/projects/7.jpeg) no-repeat">
+                            <div class="itemDescr">Остекление частного дома витражными окнами</div>
+                        </div>
                     </div>
 
                     <div class="projectItem">
-                        <div class="itemImg"><img src="images/projects/9.jpg" alt=""></div>
-                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+
+                        <div class="itemImg" style="background: url(images/projects/8.jpg) no-repeat">
+                            <div class="itemDescr">Остекление частного дома арочными окнами</div>
+                        </div>
+                    </div>
+
+                    <div class="projectItem">
+
+                        <div class="itemImg" style="background: url(images/projects/9.jpg) no-repeat">
+                            <div class="itemDescr">Остекление частного дома витражными окнами</div>
+                        </div>
                     </div>
                 </div>
-                <div class="projectBtn"><a href="" class="button">Ещё фото работ</a></div>
+                <div class="projectBtn"><a href="coop.php" class="button">Ещё фото работ</a></div>
             </div>
         </div>
     </div>
