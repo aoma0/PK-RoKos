@@ -9,9 +9,14 @@ body {
 }
 
 .container {
-    width: 1250px;
+    width: 1280px;
     margin: auto;
 
+}
+@media (max-width:1260px){
+    .container {
+        width: 100%;
+    }
 }
 
 

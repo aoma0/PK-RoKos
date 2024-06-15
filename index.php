@@ -13,11 +13,20 @@ session_start();
     <link rel='stylesheet' type='text/css' media='screen' href='assets\css\normalize.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets\css\main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets\css\mainPage.css'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
 </head>
 
 <body style="background-image: url(images/bg.jpg) ; background-attachment: fixed; ">
     <?php include 'assets\php\header.php'; ?>
-    <div class="banner"><img src="images/banner.jpg" alt="">
+    <div class="banner">
+        <div class="bannerText">
+            <h2>Пластиковые окна</h2>
+            <h3>На любой вкус</h3>
+            <p>В нашем офисе продаж представлены готовые окна в различных конфигурациях и цветовых исполнениях</p>
+            <div class="bannerBtn"><a href="" class="button">Подробнее</a></div>
+        </div>
 
     </div>
     <div class="catalogg">
@@ -26,15 +35,30 @@ session_start();
                 <h1 class="text-center">Окна и двери <span class="red">от производителя</span></h1>
                 <div class="catalogContainer">
                     <div class="left">
-                        <div class="block" style="background-image: url(images/catalog-omg/product1.jpg)"></div>
+                        <div class="block" style="background-image: url(images/catalog-omg/product1.jpg)">
+                            <div class="nameBlock">Пластиковые окна</div>
+                            <div class="priceBlock">цена от 9000 Р</div>
+                        </div>
                         <div class="sub-blocks">
-                            <div class="block" style="background-image: url(images/catalog-omg/product2.jpg)"></div>
-                            <div class="block" style="background-image: url(images/catalog-omg/product3.jpg)"></div>
+                            <div class="block" style="background-image: url(images/catalog-omg/product2.jpg)">
+                                <div class="nameBlock">Пластиковые <br> двери</div>
+                                <div class="priceBlock">цена от 3900 Р</div>
+                            </div>
+                            <div class="block" style="background-image: url(images/catalog-omg/product3.jpg)">
+                                <div class="nameBlock">Балконное <br> остекленение</div>
+                                <div class="priceBlock">цена от 10900 Р</div>
+                            </div>
                         </div>
                     </div>
                     <div class="right">
-                        <div class="block" style="background-image: url(images/catalog-omg/product4.jpg)"></div>
-                        <div class="block" style="background-image: url(images/catalog-omg/product5.jpg)"></div>
+                        <div class="block" style="background-image: url(images/catalog-omg/product4.jpg)">
+                            <div class="nameBlock">Витражи</div>
+                            <div class="priceBlock">цена от 5900 Р</div>
+                        </div>
+                        <div class="block" style="background-image: url(images/catalog-omg/product5.jpg)">
+                            <div class="nameBlock">Нестандартные <br> решения</div>
+                            <div class="priceBlock">цена от 5900 Р</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -124,19 +148,51 @@ session_start();
         <div class="container">
             <div class="projectsWrap">
                 <h2>Наши <span class="red">работы</span></h2>
-                <div class="projectsWrapper">
+                <div class="slider projectsWrapper">
+
                     <div class="projectItem">
                         <div class="itemImg"><img src="images/projects/1.jpg" alt=""></div>
-                        <div class="itemDescr"><span>Детский сад на 220 мест по ул. Ягодная в с. Ямное</span></div>
+                        <div class="itemDescr">Детский сад на 220 мест по ул. Ягодная в с. Ямное</div>
                     </div>
+
                     <div class="projectItem">
                         <div class="itemImg"><img src="images/projects/2.jpg" alt=""></div>
                         <div class="itemDescr"><span>Спортивный комплекс в г.Лиски Воронежской области</span></div>
                     </div>
+
                     <div class="projectItem">
                         <div class="itemImg"><img src="images/projects/3.jpg" alt=""></div>
-                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span>
-                        </div>
+                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+                    </div>
+                    
+                    <div class="projectItem">
+                        <div class="itemImg"><img src="images/projects/4.jpg" alt=""></div>
+                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+                    </div>
+
+                    <div class="projectItem">
+                        <div class="itemImg"><img src="images/projects/5.jpg" alt=""></div>
+                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+                    </div>
+
+                    <div class="projectItem">
+                        <div class="itemImg"><img src="images/projects/6.jpeg" alt=""></div>
+                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+                    </div>
+
+                    <div class="projectItem">
+                        <div class="itemImg"><img src="images/projects/7.jpeg" alt=""></div>
+                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+                    </div>
+
+                    <div class="projectItem">
+                        <div class="itemImg"><img src="images/projects/8.jpg" alt=""></div>
+                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
+                    </div>
+
+                    <div class="projectItem">
+                        <div class="itemImg"><img src="images/projects/9.jpg" alt=""></div>
+                        <div class="itemDescr"><span>Детский сад на 340 мест микрорайон «Ольха» в с.Новая Усмань</span></div>
                     </div>
                 </div>
                 <div class="projectBtn"><a href="" class="button">Ещё фото работ</a></div>
@@ -158,6 +214,7 @@ session_start();
                                 являются отличной защитой от пыли и уличного мусора.</span>
                         </div>
                     </div>
+
                     <div class="newsItem">
                         <div class="newsImg"><img src="images/blog/2.jpg" alt=""></div>
                         <div class="newsDescr">
@@ -169,6 +226,7 @@ session_start();
                                 древесины. </span>
                         </div>
                     </div>
+
                     <div class="newsItem">
                         <div class="newsImg"><img src="images/blog/3.jpg" alt=""></div>
                         <div class="newsDescr">
@@ -228,8 +286,10 @@ session_start();
     </div>
 
     <?php include 'assets\php\footer.php'; ?>
-
-    <script src="assets\js\code.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="assets/js/code.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/slider.js"></script>
 </body>
 
 </html>

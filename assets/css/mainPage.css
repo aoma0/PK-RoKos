@@ -1,24 +1,68 @@
-/* BANNER */
-
-.banner img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+.bannerText a,
+.projectsWrap a,
+.newsWrap a {
+    text-decoration: none;
 }
 
+
+/* BANNER */
+.banner {
+    height: 100vh;
+    background: url("../../images/banner.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerText {
+    width: 740px;
+    height: 370px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 50px;
+    position: relative;
+}
+
+.bannerText h2 {
+    font-size: 52px;
+    line-height: 63px;
+}
+
+.bannerText h3 {
+    font-size: 32px;
+    line-height: 39px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.bannerText p {
+    font-size: 22px;
+}
+
+.bannerBtn {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+
+
 /* CATALOG BLOCK */
-.text-center{
+.text-center {
     font-size: 52px;
     text-align: center;
     padding-bottom: 30px;
 }
-.catalogWrap{
+
+.catalogWrap {
     padding: 60px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .catalogContainer {
     width: 1000px;
     height: 670px;
@@ -49,6 +93,7 @@
     padding: 20px;
     border: 1px solid #ddd;
     flex: 1;
+    position: relative;
 }
 
 .sub-blocks {
@@ -61,15 +106,41 @@
 .sub-blocks .block {
     width: 50%;
 }
+
 .right .block:nth-child(1) {
     max-height: 65%;
     flex: 1;
-  }
-  
-  .right .block:nth-child(2) {
+}
+
+.right .block:nth-child(2) {
     max-height: 35%;
     flex: 1;
-  }
+}
+/* CATALOG CARDS INFO */
+.nameBlock{
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 10px 20px 10px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+}
+.priceBlock{
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #D10016;
+    border: 1.5px solid #D10016;
+    
+}
 
 /* FORM OF CALL BACK*/
 #formred {
@@ -140,7 +211,7 @@
 }
 
 /* DESCIPTION */
-.description{
+.description {
     background: white;
 }
 
@@ -167,7 +238,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px 0;
 
 }
@@ -177,7 +248,21 @@
     height: 100%;
     width: 577px;
 }
-
+@media (max-width: 1260px){
+    .imgAbout{
+        width: 350px;
+        height: 100%;
+    }
+}
+@media (max-width: 991px){
+    .imgAbout{
+        display: none;
+    }
+    .descriptionWrap, .textAbout{
+        width: 100%;
+        padding: 50px 20px;
+    }
+}
 /* ADVANTAGES*/
 
 .advantages {
@@ -192,9 +277,21 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 10px;
+  
 }
-
+@media (max-width: 1260px){
+    .advantages_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 50px 100px;
+        flex-wrap: wrap;
+        gap: 50px;
+      
+    }
+}
 .advantages__item {
     display: flex;
     flex-direction: column;
@@ -221,10 +318,12 @@
 }
 
 /* PROJECTS*/
-.ourProjects {}
-
 .projectsWrap {
     padding: 50px 0 0 0;
+}
+.container{
+    align-content: center;
+    align-items: center;
 }
 
 .ourProjects h2 {
@@ -234,24 +333,27 @@
 }
 
 .projectsWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: auto;
+  align-content: center;
+  align-items: center;
 }
 
 .projectItem img {
-    width:385px;
+    width: 360px;
+    
 }
 
 .projectItem {
     display: flex;
     position: relative;
+    width: 360px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .itemImg {
     display: flex;
-    position: relative;
+    width: 360px;
 }
 
 .itemDescr {
@@ -262,6 +364,10 @@
     font-size: 25px;
     color: white;
     background: rgba(0, 0, 0, 0.575);
+    width: 360px;
+    padding: 15px 19px;
+
+    text-decoration: none;
 }
 
 .itemDescr span {
@@ -302,7 +408,7 @@
 }
 
 .newsItem {
-    width:385px;
+    width: 385px;
     background: white;
     display: flex;
     flex-direction: column;
