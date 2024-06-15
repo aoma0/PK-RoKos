@@ -321,6 +321,10 @@
 .projectsWrap {
     padding: 50px 0 0 0;
 }
+.slick-slide {
+    width: calc((100% - 2 * 20px) / 3); /* ширина каждого элемента */
+    margin: 0 20px; /* отступ между элементами */
+  }
 .container{
     align-content: center;
     align-items: center;
@@ -346,9 +350,6 @@
     display: flex;
     position: relative;
     width: 360px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
 }
 
 .itemImg {
