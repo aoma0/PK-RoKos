@@ -69,11 +69,13 @@ session_start();
             <div class="formcenter">
                 <h2>Заказать бесплатный замер</h2>
                 <div class="formWrapper">
-                    <div class="reddiv">Как Вас зовут?<br>
-                        <input type="text" name="name" required="required">
-                    </div>
-                    <div class="reddiv">Ваш телефон:<br>
-                        <input type="text" name="phone" required="required" placeholder="+7 999 999-9999">
+                    <div class="formInputs">
+                        <div class="reddiv">Как Вас зовут?<br>
+                            <input type="text" name="name" required="required">
+                        </div>
+                        <div class="reddiv">Ваш телефон:<br>
+                            <input type="text" name="phone" required="required" placeholder="+7 999 999-9999">
+                        </div>
                     </div>
                     <div class="but">
                         <button class="button" onclick="">Отправить</button>
@@ -220,7 +222,7 @@ session_start();
         <div class="container">
             <div class="newsWrap">
                 <h2>Последние <span class="red">новости</span></h2>
-                <div class="newsWrapper">
+                <div class="slider newsWrapper">
                     <div class="newsItem">
                         <div class="newsImg"><img src="images/blog/1.jpg" alt=""></div>
                         <div class="newsDescr">
@@ -251,6 +253,44 @@ session_start();
                             <span class="cardText">Окна ПВХ - классификация по типу механизма, рамы и стеклопакета.
                                 Специальные разновидности для дач, детских и т.д. Где приобрести надежные,
                                 красивые и комфортные пластиковые окна? </span>
+                        </div>
+                    </div>
+
+                    <div class="newsItem">
+                        <div class="newsImg"><img src="images/blog/4.jpg" alt=""></div>
+                        <div class="newsDescr">
+                            <span class="cardTitle">Как выгодно купить пластиковые окна</span>
+                            <span class="cardText">Как купить пластиковые окна в Воронеже с наибольшей выгодой?
+                                На что стоит обратить внимание в первую очередь при покупке и на чем экономить не стоит. </span>
+                        </div>
+                    </div>
+
+                    <div class="newsItem">
+                        <div class="newsImg"><img src="images/blog/5.jpg" alt=""></div>
+                        <div class="newsDescr">
+                            <span class="cardTitle">Особенности установки пластиковых окон в деревянном доме</span>
+                            <span class="cardText">Установка пластиковых окон в дом - дело ответственное и требует
+                                внимательного отношения. Главное - в процессе установки учесть
+                                особенности строения дома и профессиональный подход.</span>
+                        </div>
+                    </div>
+
+                    <div class="newsItem">
+                        <div class="newsImg"><img src="images/blog/6.jpg" alt=""></div>
+                        <div class="newsDescr">
+                            <span class="cardTitle">Нюансы установки пластиковых окон в Воронеже</span>
+                            <span class="cardText">Установка пластиковых окон – процедура трудоемкая и ответственная,
+                                требующая профессиональных навыков и аккуратности, поэтому процесс лучше доверить
+                                мастерам своего дела. </span>
+                        </div>
+                    </div>
+
+                    <div class="newsItem">
+                        <div class="newsImg"><img src="images/blog/7.png" alt=""></div>
+                        <div class="newsDescr">
+                            <span class="cardTitle">Преимущества профилей REHAU</span>
+                            <span class="cardText">Бренд REHAU известен на Российском рынке благодаря качественным,
+                                но относительно недорогим профильным системам. </span>
                         </div>
                     </div>
                 </div>
@@ -307,6 +347,7 @@ session_start();
     <script src="assets/js/code.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/slider.js"></script>
+    
 </body>
 
 </html>

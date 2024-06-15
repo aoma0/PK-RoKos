@@ -1,3 +1,4 @@
+<script src="assets/js/mobile-menu.js"></script>
 <footer style="background: url(images/bg-footer.jpg) no-repeat center top; background-size: cover;">
         <div class="container">
             <div class="footerBlocks">
@@ -24,8 +25,9 @@
                 </div>
             </div>
             <div class="priacyPolicy">
-                ПК «РОКОС» © 2024 г. Все права защищены
-                <a href="/files/polytic.pdf" class="footer__politic">Политика конфиденциальности</a>
+                <div>Веб-сайт выполнен в качестве дипломной работы</div>
+                <div>ВГУИТ 2024</div>
+                <div>Студент группы ИСП-205 Солдатов Д.Р.</div>
             </div>
         </div>
     </footer>

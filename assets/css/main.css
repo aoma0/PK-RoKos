@@ -13,7 +13,8 @@ body {
     margin: auto;
 
 }
-@media (max-width:1279px){
+
+@media (max-width:1279px) {
     .container {
         width: 100%;
         padding: 0 20px;
@@ -36,10 +37,13 @@ body {
     transition: .3s;
 }
 
-.button:hover {
-    transform: scale(1.05);
+@media (pointer: fine) {
+    .button:hover {
+        transform: scale(1.05);
 
+    }
 }
+
 
 /* HEADER */
 header {
@@ -47,7 +51,6 @@ header {
     top: 0;
     left: 0;
     z-index: 4;
-
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8407738095238095) 0%, rgba(0, 0, 0, 0.577468487394958) 34%, rgba(0, 0, 0, 0.2637429971988795) 75%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
     transition: all 0.3s;
@@ -60,6 +63,8 @@ header {
     margin: 0 auto;
     max-width: 1350px;
     transition: all 0.3s;
+    position: relative;
+    padding: 0 20px;
 }
 
 .logo {
@@ -84,6 +89,128 @@ header {
 #account {
     width: 38px;
 }
+
+/* RESPONSIVE HEADER */
+.mobile-menu-btn {
+    position: absolute;
+    top: 21px;
+    left: 15px;
+    display: none;
+    width: 28px;
+    height: 28px;
+}
+
+.mobile-menu-btn__line {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: #D10016;
+}
+
+@media (max-width: 991px) {
+    header {
+        position: fixed;
+        background: #000000;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .headerWrap {
+        height: 70px;
+        justify-content: center;
+    }
+
+    .logo,
+    .min-header .logo {
+        width: 80px;
+    }
+
+    .mainUl {
+        display: none;
+    }
+
+    .mobile-menu-btn,
+    .mobile-menu-btn__line {
+        display: flex;
+    }
+
+    .mobile-menu-btn:before {
+        top: 4px;
+    }
+
+    .mobile-menu-btn:after {
+        top: 20px;
+    }
+
+    .mobile-menu-btn:before,
+    .mobile-menu-btn:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: #D10016;
+        transition: all .3s;
+    }
+
+    .accountIco {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+}
+
+
+.mobile-menu-btn.active .mobile-menu-btn__line {
+    display: none;
+}
+
+.mobile-menu-btn.active:before {
+    transform: rotate(45deg);
+    top: 12px;
+}
+
+.mobile-menu-btn.active:after {
+    transform: rotate(-45deg);
+    top: 12px;
+}
+
+.mainUl.active {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    ;
+    padding: 20px;
+
+}
+
+.mainUl.active li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mainUl.active li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (pointer: fine) {
+    .mainUl.active li a:hover {
+        color: #D10016;
+    }
+}
+
+
 
 /* UL DESIGN */
 header ul {
@@ -127,15 +254,16 @@ header ul li a:before {
 
 }
 
-header ul li a:hover:before {
-    width: 100%;
+@media (pointer: fine) {
+
+    header ul li a:hover:before {
+        width: 100%;
+    }
+
+    header ul li a:hover {
+        background-color: rgba(0, 0, 0, .6);
+    }
 }
-
-header ul li a:hover {
-    background-color: rgba(0, 0, 0, .6);
-}
-
-
 
 /*INNER-MENU*/
 
@@ -143,6 +271,16 @@ header ul li a:hover {
 .headerInnerMenuTxt {
     padding: 10px;
 }
+/* phone-menu ABOUT */
+@media (pointer: coarse) or (pointer: none) {
+    .headerInnerMenuTxt.active + ul.innerMenuAbout {
+    padding-top: 10px;
+    visibility: visible; 
+    top: 160%;
+    opacity: 1;
+  }
+}
+
 
 .innerMenuAbout {
     width: 100%;
@@ -181,21 +319,28 @@ header ul li a:hover {
 
 }
 
-.mainUl li:hover .innerMenuAbout,
-.mainUl li:hover .innerMenuCatalog,
-.innerMenuCatalog li:hover .catalogMenu {
-    visibility: visible;
-    transform: translateY(0);
-    opacity: 1;
+@media (pointer: fine) {
+
+    .mainUl li:hover .innerMenuAbout,
+    .mainUl li:hover .innerMenuCatalog,
+    .innerMenuCatalog li:hover .catalogMenu {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .innerMenuText li a:hover {
+        background-color: #D10016;
+    }
+
 }
 
-.innerMenuText li a:hover {
-    background-color: #D10016;
+@media (pointer: fine) {
+    .innerMenuText li a:hover:before {
+        width: 0;
+    }
 }
 
-.innerMenuText li a:hover:before {
-    width: 0;
-}
 
 /* CATALOG */
 .innerMenuCatalog {
@@ -273,19 +418,28 @@ footer {
 .priacyPolicy {
     background: #141414;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
     color: white;
-    font-size: 19px;
+    font-size: 14px;
     padding: 19px;
 }
 
-.footer__politic {
+/* .footer__politic {
     text-decoration: none;
     color: white;
     font-size: 19px;
-}
+} */
 
 .red {
     color: #D10016;
+}
+
+@media (max-width:659px) {
+    .footerBlocks {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

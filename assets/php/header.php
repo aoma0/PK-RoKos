@@ -1,5 +1,8 @@
 <header>
     <div class="headerWrap">
+            <div class="mobile-menu-btn">
+                <span class="mobile-menu-btn__line"></span>
+            </div>
         <a href="index.php" class="logo"><img src="images\logo.svg" alt="Производитель дверей и окон пвх – Рокос"></a>
         <ul class="mainUl">
             <li><span class="headerInnerMenuTxt">Продукция</span>
@@ -87,7 +90,8 @@
                     </div>
                 </ul>
             </li>
-            <li><a href=" reglogPage.php"><img src="images/icons/user.png" alt="" id="account"></a></li>
+            
         </ul>
+        <a href=" reglogPage.php" class="accountIco"><img src="images/icons/user.png" alt="" id="account"></a>
     </div>
 </header>
