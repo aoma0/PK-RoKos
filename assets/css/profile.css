@@ -17,7 +17,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2em;
+    padding: 32px;
 }
 
 h1 {
@@ -185,3 +185,100 @@ tr:last-child{
     text-decoration: none;
     cursor: pointer;
 }
+
+@media (max-width: 1279px){
+    .leftBlock{
+        height: auto;
+        padding-bottom: 50px;
+        justify-content: left;
+    }
+    .leftTopBlock{
+        flex-direction: row;
+        gap: 10px;
+        
+    }
+    .leftBlockText{
+        flex-direction: row;
+        gap: 10px;
+    }
+    .leftBlockDevider{
+        display: none;
+    }
+    .profileBlock{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media (max-width: 720px){
+    td:nth-child(3), th:nth-child(3){
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;       
+    } 
+}
+@media (max-width:639px) {
+
+    .textRow {
+        max-width: 250px;
+    }
+    .wrapper{
+        padding: 32px 0px;
+    }
+
+}
+@media (max-width:560px) {
+
+    .container h1 {
+        font-size: 32pt;
+        line-height: 39px;
+    }
+    .leftBlock{
+        padding-bottom: 20px;
+    }
+    .leftBlock p{
+        font-size: 16pt;
+       
+    }
+    td:nth-child(2), th:nth-child(2),th:nth-child(4){
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;       
+    } 
+    th {
+        border-bottom: none;
+        
+    }
+    tr{
+        justify-content: center;
+        display: flex;
+        padding-bottom: 0;
+    }
+    th{
+        border-right: none;
+    }
+    td{
+        padding-bottom: 10px;
+        width: 173px;
+    }
+}
+@media (max-width:424px) {
+    .leftBlock{
+        padding-bottom: 13px;
+    }
+    .container h1 {
+        font-size: 24pt;
+        line-height: 31px;
+    }
+
+    .leftBlock p{
+        font-size: 14pt;
+    }
+    td{
+        width: 130px;
+    }
+}
+

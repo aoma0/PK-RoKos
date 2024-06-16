@@ -39,7 +39,7 @@
             <p><strong>Мы работаем для Вас!</strong></p>
         </div>
         <div class="videoBlock">
-        <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Q0xeSnAbZFQ" style="width: 100%; height: 600px; display: flex;"></iframe>
+        <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Q0xeSnAbZFQ"></iframe>
         </div>
     </div>
     <?php include 'assets\php\footer.php'; ?>

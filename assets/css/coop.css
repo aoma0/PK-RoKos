@@ -1,11 +1,12 @@
-.banner{
+.banner {
     height: 550px;
     background: url("../../images/wokWithUsbg.jpg");
     background-position: center center;
     background-size: cover;
     position: relative;
 }
-.bannerText{
+
+.bannerText {
     display: block;
     color: #fff;
     background: rgba(0, 0, 0, 0.8);
@@ -15,45 +16,45 @@
     width: 740px;
     padding: 40px;
 }
-.bannerText h1{
+
+.bannerText h1 {
     font-size: 4vw;
 }
-h2{
+
+h2 {
     font-size: 40pt;
     font-weight: 500;
     color: #D10016;
 }
-.textBlock{
+
+.textBlock {
     display: flex;
     flex-direction: column;
     padding: 50px 0;
     gap: 15px;
 }
-.textBlock p{
+
+.textBlock p {
     font-size: 22px;
     text-align: justify;
     line-height: 1.5;
 }
-.list{
-    
-}
-.textBlock strong{
+
+.textBlock strong {
     font-weight: bold;
 }
-.videoBlock{
-    display: block;
-    padding-bottom: 50px;
-}
+
 /* PROJECTS */
 .projectsWrap {
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
 .projectsWrap h3 {
-    font-size: 2.2vw;
+    font-size: 46px;
+    line-height: 56px;
     text-align: center;
-    padding-bottom: 1.3vw;
+    padding-bottom: 24px;
 }
 
 .projectsWrapper {
@@ -62,7 +63,8 @@ h2{
     justify-content: space-between;
     height: auto;
 }
-.projectsRow{
+
+.projectsRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,7 +73,7 @@ h2{
 }
 
 .projectItem img {
-    width: 20vw;
+    width: 384px;
 }
 
 .projectItem {
@@ -86,10 +88,11 @@ h2{
 
 .itemDescr {
     position: absolute;
-    top: 1vw;
+    width: 100%;
+    top: 19px;
     left: 0;
     z-index: 3;
-    font-size: 1.3vw;
+    font-size: 25px;
     color: white;
     background: rgba(0, 0, 0, 0.575);
 }
@@ -97,7 +100,85 @@ h2{
 .itemDescr span {
     display: block;
     position: relative;
-    padding: 0.8vw 1vw;
+    padding: 15px 19px;
 
     text-decoration: none;
+}
+
+@media (max-width: 1230px) {
+    .projectItem img, .itemDescr {
+        width: 320px;
+    }
+    .itemDescr{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1079px) {
+    .projectsRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .projectItem img, .itemDescr {
+        width: 500px;
+    }
+    .itemDescr{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .bannerText {
+        width: 90%;
+        left: auto;
+    }
+
+    .bannerText h1 {
+        text-align: center;
+    }
+
+    .textBlock h2 {
+        text-align: center;
+    }
+    
+}
+
+@media (max-width:560px) {
+
+    .bannerText h1,
+    .textBlock h2,
+    .projectsWrap h3 {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .banner {
+        height: 400px;
+    }
+
+    .textBlock p {
+        font-size: 16px;
+    }
+    .projectItem img, .itemDescr {
+        width: 310px;
+    }
+    .itemDescr{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:319px) {
+    .bannerText h1 {
+        font-size: 20px;
+        line-height: 21px;
+    }
+
+    .projectsRow, .projectItem img, .itemDescr {
+        width: 100%;
+    }
+
+    .itemDescr {
+        top: 14px;
+        font-size: 5vw;
+    }
 }

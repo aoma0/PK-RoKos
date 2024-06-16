@@ -1,7 +1,11 @@
+html{
+  width: auto;
+}
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  
 }
 
 header {
@@ -17,45 +21,45 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2em;
+  padding: 32px;
 }
 
 h1 {
-  font-size: 2.2vw;
+  font-size: 42px;
   color: #D10016;
 }
 
 .formsBlock {
   background: white;
-  padding: 2vw;
+  padding: 38px;
 }
 
 /*FORMS*/
 #regForm {
   display: none;
-  padding: 1vw;
+  padding: 19px;
 }
 
 #logForm {
   display: none;
-  padding: 1vw;
+  padding: 19px;
 }
 
 .formaBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20vw;
-  gap: 1vw;
+  width: 380px;
+  gap: 19px;
 }
 
 .errorMsg {
-  font-size: 1.5vw;
-  min-height: 1.5vw;
+  font-size: 23px;
+  min-height: 29px;
 }
 
 .formsBlock p {
-  font-size: 0.9vw;
+  font-size: 17px;
   display: flex;
   justify-content: center;
 }
@@ -63,8 +67,8 @@ h1 {
 /* STYLE FOR FORM ELEMENT*/
 .formaBlock input {
   color: #313131;
-  font-size: 1.2vw;
-  width: 13vw;
+  font-size: 23px;
+  width: 250px;
 }
 
 .formaBlock input,
@@ -72,21 +76,21 @@ h1 {
 .formaBlock input:focus,
 .formaBlock input:hover {
   border: none;
-  border-bottom: solid 0.1vw #D10016;
+  border-bottom: solid 1px #D10016;
   outline: none
 }
 
 input::-webkit-input-placeholder {
-  font-size: 1vw;
+  font-size: 19px;
 
 }
 
 input::-moz-placeholder {
-  font-size: 1vw;
+  font-size: 19px;
 }
 
 input:-ms-input-placeholder {
-  font-size: 1vw;
+  font-size: 19px;
 }
 
 /* BOTTOM OF THE FORMS*/
@@ -97,12 +101,32 @@ input:-ms-input-placeholder {
 #logP {
   display: none;
 }
-
+.formsBottom{
+  padding: 10px 0;
+}
 .formsBlock span {
   cursor: pointer;
+  
 
 }
 
 .formsBlock span:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .wrapper{
+    justify-content: center;
+    align-content: center;
+  }
+  .formsBlock{
+    padding: 0;
+  }
+  #regForm, #logForm{
+    padding: 19px 0;
+  }
+  .formaBlock {
+    width: 320px;
+    
+  }
 }

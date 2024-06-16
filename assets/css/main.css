@@ -129,6 +129,8 @@ header {
     }
 
     .mainUl {
+        max-width: 100%;
+  overflow-x: hidden;
         display: none;
     }
 
@@ -181,6 +183,8 @@ header {
 }
 
 .mainUl.active {
+    max-width: 100%;
+  overflow-x: hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;

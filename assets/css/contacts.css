@@ -1,11 +1,12 @@
-.banner{
+.banner {
     height: 550px;
     background: url("../../images/ContactsBanner.jpg");
     background-position: center center;
     background-size: cover;
     position: relative;
 }
-.bannerText{
+
+.bannerText {
     display: block;
     color: #fff;
     background: rgba(0, 0, 0, 0.8);
@@ -15,18 +16,20 @@
     width: 740px;
     padding: 40px;
 }
-.bannerText h1{
+
+.bannerText h1 {
     font-weight: 500;
     font-size: 52px;
     line-height: 63px;
 }
-.container h3{
+
+.container h3 {
     font-size: 32px;
     padding-top: 70px;
 }
 
 /*ROWS*/
-.contactsRow{
+.contactsRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,25 +37,29 @@
     padding-top: 20px;
     padding-bottom: 50px;
 }
-.block{
+
+.block {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
 }
-.block p{
-    font-size: 22px ;
+
+.block p {
+    font-size: 22px;
 }
-.block a{
+
+.block a {
     text-decoration: none;
     color: #D10016;
 }
-b{
+
+b {
     font-weight: bold;
 }
 
 /*callback form*/
-#obratnaj{
+#obratnaj {
     width: 100%;
     background: url("../../images/bg.jpg");
     background-position: center center;
@@ -64,13 +71,15 @@ b{
     border-radius: 5px;
     padding: 10px;
 }
-.zag{
+
+.zag {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
 }
-.formRow{
+
+.formRow {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -82,18 +91,19 @@ b{
 #obratnaj input,
 #obratnaj input:active,
 #obratnaj input:focus,
-#obratnaj input:hover{
+#obratnaj input:hover {
     height: 40px;
     padding: 0 15px;
     font-size: 16px;
     border: #313131 solid 1px;
     color: #313131;
     background: #fff;
-  outline: none;
-  width: 100%;
+    outline: none;
+    width: 100%;
 
 }
-#obratnaj textarea{
+
+#obratnaj textarea {
     padding: 10px 15px;
     font-size: 16px;
     border: #313131 solid 1px;
@@ -103,9 +113,63 @@ b{
     resize: none;
     width: 100%;
 }
+
 #form-caption {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
 }
 
+@media (max-width: 991px) {
+    .bannerText {
+        width: 90%;
+        left: auto;
+    }
+
+    .bannerText h1 {
+        text-align: center;
+    }
+
+    .container h3 {
+        text-align: center;
+    }
+
+    .contactsRow {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:560px) {
+
+    .bannerText h1,
+    .container h3 {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .banner {
+        height: 400px;
+    }
+
+    .block p {
+        font-size: 16px;
+    }
+    iframe{
+        height: 250px;
+    }
+}
+
+@media(max-width:429px) {}
+
+@media(max-width:319px) {
+    .bannerText h1 {
+        font-size: 20px;
+        line-height: 21px;
+    }
+
+    .formRow {
+        flex-direction: column;
+    }
+}
