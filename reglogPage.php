@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('assets\php\db.php');
+require_once('assets/php/db.php');
 
 
 if (isset($_SESSION['user_id'])) { //проверка не авторизовался ли пользователь уже
@@ -93,7 +93,7 @@ if (isset($_POST['loginBtn'])) {
 
 <body style="background-image: url(images/bg.jpg) ; background-attachment: fixed; ">
 
-    <?php include 'assets\php\header.php'; ?>
+    <?php include 'assets/php/header.php'; ?>
 
     <div class="wrapper">
         <div class="formsBlock">
@@ -133,7 +133,7 @@ if (isset($_POST['loginBtn'])) {
     </div>
     </div>
 
-    <?php include 'assets\php\footer.php'; ?>
+    <?php include 'assets/php/footer.php'; ?>
     <script src="assets\js\loginPage.js"></script>
 </body>
 

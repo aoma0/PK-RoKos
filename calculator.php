@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <?php include 'assets\php\header.php'; ?>
+    <?php include 'assets/php/header.php'; ?>
 
     <div class="banner">
         <div class="container">
@@ -76,7 +76,7 @@
                 про наши выгодные предложения. Так же у нас доступно <a href="">остекление балконов.</a></p>
         </div>
     </div>
-    <?php include 'assets\php\footer.php'; ?>
+    <?php include 'assets/php/footer.php'; ?>
 
 </body>
 

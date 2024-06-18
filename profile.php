@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('assets\php\db.php');
+require_once('assets/php/db.php');
 
 
 if (!isset($_SESSION['user_id'])) { //проверка авторизовался ли пользователь,если нет, то перенаправляет на страничку регистрации/авторизации
@@ -31,7 +31,7 @@ if (isset($_GET['logout']) && $_GET['logout'] == true) {
 
 <body style="background-image: url(images/bg.jpg) ; background-attachment: fixed; ">
 
-    <?php include 'assets\php\header.php'; ?>
+    <?php include 'assets/php/header.php'; ?>
 
     <div class="wrapper">
         <div class="container">
@@ -64,7 +64,7 @@ if (isset($_GET['logout']) && $_GET['logout'] == true) {
         </div>
     </div>
     
-    <?php include 'assets\php\footer.php'; ?>
+    <?php include 'assets/php/footer.php'; ?>
     <script src="assets/js/openAppl.js"></script>
 </body>
 

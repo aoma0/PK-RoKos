@@ -19,7 +19,7 @@ session_start();
 </head>
 
 <body style="background-image: url(images/bg.jpg) ; background-attachment: fixed; ">
-    <?php include 'assets\php\header.php'; ?>
+    <?php require 'assets/php/header.php'; ?>
     <div class="banner">
         <div class="bannerText">
             <h2>Пластиковые окна</h2>
@@ -316,24 +316,27 @@ session_start();
                         </a>
                     </div>
                     <div class="reviewCard">
-                        <a class="otzyv" href="https://yandex.ru/maps/-/CCUQj8S9XA" target="_blank" title="Смотреть весь отзыв на карте">
-                            <div class="stars"><span>Василий</span> <span style="color: #D10016 ;">&#9733;&#9733;&#9733;&#9733;<span style="color: #313131;">&#9733;</span></span></div>
-                            <p>Компания рокос занималась остеклением моего балкона. Нужно было сделать теплый балкон,
-                                подобрали с менеджером оптимальный вариант 70 профиль и теплопакет. Балкон на стадии
-                                ремонта, но уже сейчас понятно , что результат есть, он стал намного теплее.</p>
+                        <a class="otzyv" href="https://goo.gl/maps/uMYYJRnQNK3m6Qga8" target="_blank" title="Смотреть весь отзыв на карте">
+                            <div class="stars"><span>Елизавета Романова</span> <span style="color: #D10016 ;">&#9733;&#9733;&#9733;&#9733;<span style="color: #313131;">&#9733;</span></span></div>
+                            <p>Заказывали в этой компании изготовление витражных окон для дома. Результатом вполне довольны: 
+                                профиль - качественный пластик Рехау, цвет приятный, темно-коричневый. Но цены у них не самые 
+                                не дешевые, я скорее бы назвала их средними.</p>
                             <div class="otzyvBottom">
-                                <div>18-01-2021</div> <img src="images/ymaps.png" alt="">
+                                <div>12-11-2020</div> <img src="images/gmaps.png" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="reviewCard">
-                        <a class="otzyv" href="https://yandex.ru/maps/-/CCUQj8S9XA" target="_blank" title="Смотреть весь отзыв на карте">
-                            <div class="stars"><span>Василий</span> <span style="color: #D10016 ;">&#9733;&#9733;&#9733;&#9733;<span style="color: #313131;">&#9733;</span></span></div>
-                            <p>Компания рокос занималась остеклением моего балкона. Нужно было сделать теплый балкон,
-                                подобрали с менеджером оптимальный вариант 70 профиль и теплопакет. Балкон на стадии
-                                ремонта, но уже сейчас понятно , что результат есть, он стал намного теплее.</p>
+                        <a class="otzyv" href="https://go.2gis.com/n31fbc" target="_blank" title="Смотреть весь отзыв на карте">
+                            <div class="stars"><span>Алексей Минаев</span> <span style="color: #D10016 ;">&#9733;&#9733;&#9733;&#9733;<span style="color: #313131;">&#9733;</span></span></div>
+                            <p>Переехали в новую квартиру и сразу же обнаружилась проблема - шумно очень, окна выходят на оживленную улицу. 
+                                Решил, что нужно шумозащитные ставить, иначе спать совсем невозможно. Заказал здесь сразу два окна - и в 
+                                спальню, и в детскую. Покупкой доволен - сделали хорошо, эффект от окон ощутимый. Ценник у фирмы и сам 
+                                по себе приятный, так еще и скидку небольшую дали. И отдельное спасибо хочу сказать менеджеру 
+                                (к сожалению имени не запомнил) за то, что надоумил поставить на окно в детской защитную фурнитуру, 
+                                чтобы ребенок случайно не открыл - сам бы я не додумался.</p>
                             <div class="otzyvBottom">
-                                <div>18-01-2021</div> <img src="images/ymaps.png" alt="">
+                                <div>01-01-2021</div> <img src="images/2gis.png" alt="">
                             </div>
                         </a>
                     </div>
@@ -342,7 +345,7 @@ session_start();
         </div>
     </div>
 
-    <?php include 'assets\php\footer.php'; ?>
+    <?php include 'assets/php/footer.php'; ?>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="assets/js/code.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
