@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Main Page</title>
+    <title>Главная страница</title>
     <meta name='viewport' content='width=device-width, user initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets\css\normalize.css'>
 
@@ -23,7 +23,7 @@ session_start();
     <div class="banner">
         <div class="bannerText">
             <h2>Пластиковые окна</h2>
-            <h3>На любой вкус</h3>
+            <h3> На любой вкус</h3>
             <p>В нашем офисе продаж представлены готовые окна в различных конфигурациях и цветовых исполнениях</p>
             <div class="bannerBtn"><a href="" class="button">Подробнее</a></div>
         </div>

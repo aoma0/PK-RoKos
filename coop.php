@@ -5,7 +5,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Main Page</title>
+    <title>Сотрудничество</title>
     <meta name='viewport' content='width=device-width, user initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets\css\normalize.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets\css\main.css'>

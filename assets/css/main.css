@@ -110,64 +110,6 @@ header {
     border-radius: 2px;
     background: #D10016;
 }
-
-@media (max-width: 991px) {
-    header {
-        position: fixed;
-        background: #000000;
-        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .headerWrap {
-        height: 70px;
-        justify-content: center;
-    }
-
-    .logo,
-    .min-header .logo {
-        width: 80px;
-    }
-
-    .mainUl {
-        max-width: 100%;
-  overflow-x: hidden;
-        display: none;
-    }
-
-    .mobile-menu-btn,
-    .mobile-menu-btn__line {
-        display: flex;
-    }
-
-    .mobile-menu-btn:before {
-        top: 4px;
-    }
-
-    .mobile-menu-btn:after {
-        top: 20px;
-    }
-
-    .mobile-menu-btn:before,
-    .mobile-menu-btn:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background: #D10016;
-        transition: all .3s;
-    }
-
-    .accountIco {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-    }
-}
-
-
 .mobile-menu-btn.active .mobile-menu-btn__line {
     display: none;
 }
@@ -184,7 +126,7 @@ header {
 
 .mainUl.active {
     max-width: 100%;
-  overflow-x: hidden;
+  
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -445,5 +387,62 @@ footer {
     .footerBlocks {
         flex-direction: column;
         gap: 20px;
+    }
+}
+@media (max-width: 991px) {
+    header {
+        position: fixed;
+        background: #000000;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .innerMenuCatalog .innerMenuText, .catalogMenu .innerMenuText{
+        display: none;
+    }
+    .headerWrap {
+        height: 70px;
+        justify-content: center;
+    }
+
+    .logo,
+    .min-header .logo {
+        width: 80px;
+    }
+
+    .mainUl {
+        max-width: 100%;
+  
+        display: none;
+    }
+
+    .mobile-menu-btn,
+    .mobile-menu-btn__line {
+        display: flex;
+    }
+
+    .mobile-menu-btn:before {
+        top: 4px;
+    }
+
+    .mobile-menu-btn:after {
+        top: 20px;
+    }
+
+    .mobile-menu-btn:before,
+    .mobile-menu-btn:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: #D10016;
+        transition: all .3s;
+    }
+
+    .accountIco {
+        position: absolute;
+        right: 15px;
+        top: 15px;
     }
 }

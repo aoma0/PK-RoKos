@@ -30,3 +30,4 @@ if (urlParams.has('login')) {
     document.getElementById('regP').style.display = 'flex';
     document.getElementById('logP').style.display = 'none';
 }
+

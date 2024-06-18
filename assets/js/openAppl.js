@@ -25,3 +25,4 @@ function openModal(apl_id) {
             console.error('Ошибка:', error);
         });
 }
+

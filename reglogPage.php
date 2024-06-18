@@ -35,7 +35,7 @@ if (isset($_POST['reg'])) {
         $stmt->bind_param("sssss", $login, $password, $name, $email, $phone);
         $stmt->execute();
 
-        $user_id = $conn->insert_id; // Get the newly inserted user's ID
+        $user_id = $conn->insert_id; // Получаем ID введеный в базу данных
 
         $_SESSION['user_id'] = $user_id;
 
@@ -53,7 +53,7 @@ if (isset($_POST['loginBtn'])) {
     $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-        $user_data = $result->fetch_assoc(); // Fetch the user data
+        $user_data = $result->fetch_assoc();
         $hashed_password = $user_data['password'];
 
 
@@ -83,7 +83,7 @@ if (isset($_POST['loginBtn'])) {
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Main Page</title>
+    <title>Авторизация</title>
     <meta name='viewport' content='width=device-width, user initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets\css\normalize.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets\css\main.css'>
